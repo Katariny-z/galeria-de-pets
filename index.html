@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Pets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Galeria de Pets</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Adicionar Pet</h2>
+      <form id="petForm">
+        <label for="petName">Nome do Pet:</label>
+        <input type="text" id="petName" name="petName" required>
+
+        <label for="ownerName">Nome do Dono:</label>
+        <input type="text" id="ownerName" name="ownerName" required>
+
+        <label for="petType">Tipo de Animal:</label>
+        <input type="text" id="petType" name="petType" required>
+
+        <label for="petPhoto">Foto do Pet:</label>
+        <input type="file" id="petPhoto" accept="image/*" required>
+
+        <button type="submit">Adicionar Pet</button>
+      </form>
+    </section>
+
+    <section id="gallerySection">
+      <h2>Galeria de Pets</h2>
+      <div id="petGallery"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p> Desenvolvido por Katariny - Galeria de Pets - 2024</p>
+  </footer>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>
